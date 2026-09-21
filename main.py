@@ -1,13 +1,30 @@
-
+import expenses
 def main():
-    print("=== Expenses Tracker ===")
-    print("[1] Add")
-    print("[2] View")
-    print("[3] Total")
-    print("[4] Delete")
-    print("[5] Exist")
+    while True:
+        print("=" * 30)
+        print(" Expenses Tracker ")
+        print("=" * 30)
+        print("[1] add expenses")
+        print("[2] view expenses")
+        print("[3] total expenses")
+        print("[4] delete expense")
+        print("[5] exit")
 
-    choose = input("Enter your choose here: ")
+        choice = int(input("Enter your activities here: "))
 
-    if choose == [1]:
-        add_expenses()
+        if choice == 1:
+            expenses.add_expenses()
+        elif choice == 2:
+            expenses.view_expenses()
+        elif choice == 3:
+            expenses.calculate_total()
+        elif choice == 4:
+            expenses.delete_expenses()
+        elif choice == 5:
+            break
+        else:
+            print("invalid choice selected!")
+
+
+        
+main()
