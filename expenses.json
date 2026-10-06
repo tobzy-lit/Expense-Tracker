@@ -1,0 +1,27 @@
+[
+    {
+        "amount": 120000.0,
+        "category": "house rent",
+        "description": "shelter"
+    },
+    {
+        "amount": 340000.0,
+        "category": "house rent",
+        "description": "shelter"
+    },
+    {
+        "amount": 370000.0,
+        "category": "laptop",
+        "description": "office use"
+    },
+    {
+        "amount": 2000.0,
+        "category": "food",
+        "description": "rice"
+    },
+    {
+        "amount": 80000.0,
+        "category": "food",
+        "description": "food stuff at home"
+    }
+]
