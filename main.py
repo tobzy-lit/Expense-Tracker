@@ -27,7 +27,7 @@ def main():
             expenses.view_expenses()
         elif choice == 3:
             print("-" * 30)
-            print(f"Total : {expenses.calculate_total():.2f}")
+            print(f"Total : #{expenses.calculate_total():.2f}")
         elif choice == 4:
             expenses.delete_expenses()
             expenses.save_expenses(expenses.expenses)

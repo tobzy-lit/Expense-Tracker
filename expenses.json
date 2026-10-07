@@ -15,13 +15,28 @@
         "description": "office use"
     },
     {
-        "amount": 2000.0,
-        "category": "food",
-        "description": "rice"
-    },
-    {
         "amount": 80000.0,
         "category": "food",
         "description": "food stuff at home"
+    },
+    {
+        "amount": 370000.0,
+        "category": "laptop",
+        "description": "office use"
+    },
+    {
+        "amount": 60000.0,
+        "category": "boa restaurant dish",
+        "description": "lunch at work on wednesday"
+    },
+    {
+        "amount": 8000.0,
+        "category": "chiken snacks ",
+        "description": "snacks"
+    },
+    {
+        "amount": 1000.0,
+        "category": "recharge card",
+        "description": "communication"
     }
 ]

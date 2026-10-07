@@ -11,3 +11,16 @@
 #             break       
 # txt()
 
+def save_expenses(expenses):
+    with open("expenses.json", "w", encoding="utf-8") as file:
+        json.dump(expenses, file , indent=4)
+
+def load_expenses():
+    try:
+        with open("expenses.json", "r", encoding="utf-8") as file:
+            data = json.load(file)
+            return data
+    except FileNotFoundError:
+        return []
+    except json.JSONDecodeError:
+        return []

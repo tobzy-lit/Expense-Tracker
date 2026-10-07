@@ -11,20 +11,21 @@ def add_expenses():
         try:
             amount = float(input("Enter amount here : "))
             if amount <= 0:
+                print("invalid process!. amount must be above (0)")
                 continue
             break
         except ValueError:
             print("Invalid input. the amount must greater than (0): ")
 
     while True:
-        category = input("Enter category here : ").strip()
+        category = input("Enter category here : ")
         if category == "":
             print("Invalid input. You must Enter your category ")
             continue
         break
 
     while True:
-        description = input("Enter description here : ").strip()
+        description = input("Enter description here : ")
         if description == "":
             print("Invalid input. You must Enter your description ")
             continue
@@ -66,11 +67,12 @@ def calculate_total():
     """
     total = 0
 
+    
     for expense in expenses:
         amount = expense["amount"]
         total += amount
-        result = total
-    return result
+    return total
+    
 
 
 
@@ -104,10 +106,10 @@ def delete_expenses():
 
 def save_expenses(expenses):
     with open("expenses.json", "w", encoding="utf-8") as file:
-        json.dump(expenses, file , indent=4)
+        json.dump(expenses, file, indent=4)
 
 def load_expenses():
-    try:
+    try :
         with open("expenses.json", "r", encoding="utf-8") as file:
             data = json.load(file)
             return data
