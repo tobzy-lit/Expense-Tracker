@@ -1,0 +1,10 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Local expense data
+expenses.json
+
+# Virtual environments
+.venv/
+venv/
